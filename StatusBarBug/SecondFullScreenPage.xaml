@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             x:Class="StatusBarBug.SecondFullScreenPage"
+             Title="Full screen page"
+             NavigationPage.HasNavigationBar="False"
+             ios:Page.PrefersStatusBarHidden="True"
+             ios:Page.PreferredStatusBarUpdateAnimation="Fade"
+             >
+    <ContentPage.Content>
+
+    <StackLayout>
+        <Label Text="Second full screen page" FontSize="Title" Margin="0, 30" HorizontalOptions="CenterAndExpand"/>
+        <Button Text="Click here to go to the first full screen page" Clicked="Button_Clicked"/>
+    </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
